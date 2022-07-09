@@ -1,4 +1,6 @@
-import Expenseitem from "./components/ExpenseItem";
+import React from "react";
+
+import Expenseitem from "./components/Expenses/Expenses";
 
 function App() {
   const expenses = [
@@ -46,7 +48,6 @@ function App() {
         amount={expenses[3].amount}
         date={expenses[3].date}
       ></Expenseitem>
-
     </div>
   );
 }
