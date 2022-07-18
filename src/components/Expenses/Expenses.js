@@ -21,6 +21,7 @@ const Expenses = (props) => {
         />
         {props.items.map((expense) => (
           <ExpenseItem
+           key={expense.id}
             title={expense.title}
             amount={expense.amount}
             date={expense.date}
@@ -30,5 +31,5 @@ const Expenses = (props) => {
     </div>
   );
 };
-// jh
+
 export default Expenses;
